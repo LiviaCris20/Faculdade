@@ -19,8 +19,7 @@ import {
 class PromotionsList extends Component {
   constructor(props) {
     super(props)
-  }
-      
+  }   
 
   request = () => {        
     axios.get(this.getApiURL(this.props)).then(response => { 
