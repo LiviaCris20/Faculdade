@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import { FlatList,SafeAreaView } from 'react-native'
+import { FlatList,SafeAreaView,TouchableOpacity,Text } from 'react-native'
 import axios from 'axios'
 import { connect } from 'react-redux'
+
+import { ButtonSubmit, TextButton } from '../PromotionsList/styles';
 
 import PromotionCard from './../PromotionCard'
 import Styles from './styles'
 import Header from './../Header'
+import estiloPadrao from './../Botao'
 
 import { 
   addPromotion, 
@@ -88,10 +91,16 @@ class PromotionsList extends Component {
           onRefresh={ () => {
             this.refresh()
           }}
-        />        
+        /> 
+           <TouchableOpacity
+            style={styles.buttonSubmit}
+            onPress={() => StackNav.navigate("PromotionsList")}
+            >
+            <Text style={styles.submitText}>carrinho</Text>
+          </TouchableOpacity> 
       </SafeAreaView>    
     )
-  }
+  } 
 }
 
 const mapStateToProps = (state) => {
