@@ -8,7 +8,8 @@ import Tables from "./pages/Tables";
 import Orders from "./pages/Orders";
 import Requests from "./pages/Requests";
 import Details from "./pages/Details";
-import Cardapio from "./components/PromotionsList";
+import Cardapio from "./pages/Cardapio";
+import Carrinho from './pages/Carrinho'
 
 const Stack = createStackNavigator();
 
@@ -66,7 +67,15 @@ export default function Routes() {
             title: "Lista de produtos",
           }}
         />
+         <Stack.Screen
+          name="Carrinho"
+          component={Carrinho}
+          options={{
+            title: "Carrinho de Compras",
+          }}
+        />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+} 

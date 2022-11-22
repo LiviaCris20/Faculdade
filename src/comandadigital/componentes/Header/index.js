@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { View } from 'react-native'
-import Styles from './styles'
-import PromotionFormSearch from '../PromotionFormSearch'
+//import React, { Component } from 'react'
+//import { View } from 'react-native'
+//import Styles from './styles'
+//import PromotionFormSearch from ''
 
-class Header extends Component {
+/*class Header extends Component {
   render() {
     return(
       <View style={ Styles.sectionHeader }>        
@@ -13,4 +13,4 @@ class Header extends Component {
   }
 }
 
-export default Header
+export default Header*/

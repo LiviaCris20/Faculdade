@@ -3,12 +3,12 @@ import { FlatList,SafeAreaView,TouchableOpacity,Text } from 'react-native'
 import axios from 'axios'
 import { connect } from 'react-redux'
 
-import { ButtonSubmit, TextButton } from '../PromotionsList/styles';
+import { ButtonSubmit, TextButton } from '../Cardapio/styles';
 
-import PromotionCard from './../PromotionCard'
+import PromotionCard from '../../components/PromotionCard'
 import Styles from './styles'
-import Header from './../Header'
-import estiloPadrao from './../Botao'
+import Header from '../../componentes/Header'
+import estiloPadrao from '../../components/Botao'
 
 import { 
   addPromotion, 
@@ -94,7 +94,7 @@ class PromotionsList extends Component {
         /> 
            <TouchableOpacity
             style={styles.buttonSubmit}
-            onPress={() => StackNav.navigate("PromotionsList")}
+            onPress={() => StackNav.navigate("Cardapio")}
             >
             <Text style={styles.submitText}>carrinho</Text>
           </TouchableOpacity> 

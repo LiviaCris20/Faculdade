@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { View, Text } from 'react-native';
 
-import CampoInteiro from '../../../componentes/CampoInteiro';
+
 import Botao from '../../../components/Botao';
 
 import estilos from './estilos';
